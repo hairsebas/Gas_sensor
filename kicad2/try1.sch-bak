@@ -1,0 +1,84 @@
+EESchema Schematic File Version 4
+LIBS:try1-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 1950 4200 1350 1250
+U 5E81C316
+F0 "Onion_2" 50
+F1 "Onion_2.sch" 50
+F2 "JTAG[5..0]" B R 3300 4650 50 
+F3 "RX_omega" I R 3300 4400 50 
+F4 "TX_omega" O R 3300 4300 50 
+F5 "SPI_omega[4..0]" B R 3300 5350 50 
+F6 "I2C_omega[1..0]" B R 3300 5050 50 
+$EndSheet
+Wire Wire Line
+	3400 4300 3400 3600
+Wire Wire Line
+	3400 3600 3300 3600
+Wire Wire Line
+	3300 4300 3400 4300
+Wire Wire Line
+	3300 4400 3450 4400
+Wire Wire Line
+	3450 4400 3450 3500
+Wire Wire Line
+	3450 3500 3300 3500
+Wire Bus Line
+	3500 3400 3500 4650
+Wire Bus Line
+	3500 4650 3300 4650
+Wire Bus Line
+	3300 3400 3500 3400
+Wire Bus Line
+	3650 2900 3650 5050
+Wire Bus Line
+	3650 5050 3300 5050
+Wire Bus Line
+	3300 2900 3650 2900
+Wire Bus Line
+	3650 2900 4100 2900
+Connection ~ 3650 2900
+Wire Bus Line
+	3300 2700 4100 2700
+Wire Bus Line
+	4100 3500 3850 3500
+Wire Bus Line
+	3850 3500 3850 5350
+Wire Bus Line
+	3850 5350 3300 5350
+$Sheet
+S 4100 2400 1450 1300
+U 5E81C2A4
+F0 "FPGA_ICE40UP5K" 50
+F1 "FPGA_ICE40UP5K.sch" 50
+F2 "CONTROL[5..0]" B L 4100 2700 50 
+F3 "I2C_F[1..0]" B L 4100 2900 50 
+F4 "SPI_fpga[4..0]" B L 4100 3500 50 
+$EndSheet
+$Sheet
+S 1950 2400 1350 1300
+U 5E81C399
+F0 "STM_32" 50
+F1 "STM_32.sch" 50
+F2 "JTAG[5..0]" B R 3300 3400 50 
+F3 "CONTROL[5..0]" B R 3300 2700 50 
+F4 "TX_micro" O R 3300 3500 50 
+F5 "RX_micro" I R 3300 3600 50 
+F6 "SPI_micro[4..0]" B R 3300 3200 50 
+F7 "I2C_micro[1..0]" B R 3300 2900 50 
+$EndSheet
+$EndSCHEMATC
