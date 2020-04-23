@@ -1,0 +1,33 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ICE40UP5K-SG48ITR50-proy
+D iCE40 UltraPlus FPGA, 5280 LUTs, 1.2V, 48-pin QFN
+K FPGA programmable logic
+F http://www.latticesemi.com/Products/FPGAandCPLD/iCE40Ultra
+$ENDCMP
+#
+$CMP Omega2-proy
+D Iot Computer Module by Onion
+K onion omega module
+F https://docs.onion.io/omega2-docs/omega2p.html
+$ENDCMP
+#
+$CMP STM32F100RBT6B-proy
+D ARM Cortex-M3 MCU, 64KB flash, 8KB RAM, 24MHz, 2-3.6V, 51 GPIO, LQFP-64
+K ARM Cortex-M3 STM32F1 STM32F100 Value Line
+F http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00251732.pdf
+$ENDCMP
+#
+$CMP STM32F100RBTx_copy
+D ARM Cortex-M3 MCU, 128KB flash, 8KB RAM, 24MHz, 2-3.6V, 51 GPIO, LQFP-64
+K ARM Cortex-M3 STM32F1 STM32F100 Value Line
+F http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00251732.pdf
+$ENDCMP
+#
+$CMP W25Q32JVSS-proy
+D 32Mb Serial Flash Memory, Standard/Dual/Quad SPI, SOIC-8
+K flash memory SPI
+F http://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf
+$ENDCMP
+#
+#End Doc Library
