@@ -2,9 +2,9 @@ EESchema Schematic File Version 4
 LIBS:try1-cache
 EELAYER 30 0
 EELAYER END
-$Descr User 7165 8661
+$Descr User 9449 7520
 encoding utf-8
-Sheet 5 5
+Sheet 2 5
 Title ""
 Date ""
 Rev ""
@@ -31,7 +31,7 @@ U 1 1 5F3269C8
 P 2700 1500
 F 0 "C46" H 2815 1546 50  0000 L CNN
 F 1 "220uF" H 2815 1455 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2738 1350 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2738 1350 50  0001 C CNN
 F 3 "~" H 2700 1500 50  0001 C CNN
 	1    2700 1500
 	1    0    0    -1  
@@ -62,7 +62,7 @@ U 1 1 5F3279A9
 P 3150 1500
 F 0 "C47" H 3265 1546 50  0000 L CNN
 F 1 "0.1uF" H 3265 1455 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3188 1350 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3188 1350 50  0001 C CNN
 F 3 "~" H 3150 1500 50  0001 C CNN
 	1    3150 1500
 	1    0    0    -1  
@@ -73,7 +73,7 @@ U 1 1 5F327C2D
 P 3600 1500
 F 0 "C48" H 3715 1546 50  0000 L CNN
 F 1 "1nF" H 3715 1455 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3638 1350 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3638 1350 50  0001 C CNN
 F 3 "~" H 3600 1500 50  0001 C CNN
 	1    3600 1500
 	1    0    0    -1  
@@ -94,25 +94,6 @@ F 1 "GND" H 3155 2027 50  0000 C CNN
 F 2 "" H 3150 2200 50  0001 C CNN
 F 3 "" H 3150 2200 50  0001 C CNN
 	1    3150 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L try1-rescue:BLM18SG121TN1D-proy-BLM18SG121TN1D FerriteBead3
-U 1 1 5F33159B
-P 1950 1350
-F 0 "FerriteBead3" H 1950 1565 50  0000 C CNN
-F 1 "BLM18SG121TN1D-proy" H 1950 1474 50  0000 C CNN
-F 2 "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2600 1450 50  0001 L CNN
-F 3 "https://www.murata.com/en-us/products/productdetail?partno=BLM18SG121TN1%23" H 2600 1350 50  0001 L CNN
-F 4 "Ferrite bead SMD 0603 120R 3A Murata Ferrite Bead (Chip Bead), 1.6 x 0.8 x 0.5mm (0603), 120 impedance at 100 MHz" H 2600 1250 50  0001 L CNN "Description"
-F 5 "0.75" H 2600 1150 50  0001 L CNN "Height"
-F 6 "Murata Electronics" H 2600 1050 50  0001 L CNN "Manufacturer_Name"
-F 7 "BLM18SG121TN1D" H 2600 950 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "81-BLM18SG121TN1D" H 2600 850 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=81-BLM18SG121TN1D" H 2600 750 50  0001 L CNN "Mouser Price/Stock"
-F 10 "7241447P" H 2600 650 50  0001 L CNN "RS Part Number"
-F 11 "http://uk.rs-online.com/web/p/products/7241447P" H 2600 550 50  0001 L CNN "RS Price/Stock"
-	1    1950 1350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -136,7 +117,7 @@ U 1 1 5F337E6A
 P 4000 1900
 F 0 "R24" H 4070 1946 50  0000 L CNN
 F 1 "2.2k" V 4000 1800 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3930 1900 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3930 1900 50  0001 C CNN
 F 3 "~" H 4000 1900 50  0001 C CNN
 	1    4000 1900
 	1    0    0    -1  
@@ -179,7 +160,7 @@ U 1 1 5F36E087
 P 1050 3300
 F 0 "C37" H 1165 3346 50  0000 L CNN
 F 1 "33uF" H 1165 3255 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 1088 3150 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1088 3150 50  0001 C CNN
 F 3 "~" H 1050 3300 50  0001 C CNN
 	1    1050 3300
 	1    0    0    -1  
@@ -190,7 +171,7 @@ U 1 1 5F36E5CE
 P 2250 3250
 F 0 "C40" H 2365 3296 50  0000 L CNN
 F 1 "0.1uF" H 2365 3205 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2288 3100 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2288 3100 50  0001 C CNN
 F 3 "~" H 2250 3250 50  0001 C CNN
 	1    2250 3250
 	1    0    0    -1  
@@ -201,7 +182,7 @@ U 1 1 5F36ECCB
 P 2650 3250
 F 0 "C43" H 2765 3296 50  0000 L CNN
 F 1 "33uF" H 2765 3205 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2688 3100 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2688 3100 50  0001 C CNN
 F 3 "~" H 2650 3250 50  0001 C CNN
 	1    2650 3250
 	1    0    0    -1  
@@ -310,7 +291,7 @@ U 1 1 5F3A15BA
 P 2250 5450
 F 0 "C42" H 2365 5496 50  0000 L CNN
 F 1 "0.1uF" H 2365 5405 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2288 5300 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2288 5300 50  0001 C CNN
 F 3 "~" H 2250 5450 50  0001 C CNN
 	1    2250 5450
 	1    0    0    -1  
@@ -321,7 +302,7 @@ U 1 1 5F3A15C0
 P 2650 5450
 F 0 "C45" H 2765 5496 50  0000 L CNN
 F 1 "33uF" H 2765 5405 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2688 5300 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2688 5300 50  0001 C CNN
 F 3 "~" H 2650 5450 50  0001 C CNN
 	1    2650 5450
 	1    0    0    -1  
@@ -370,7 +351,7 @@ U 1 1 5F3A2BC5
 P 1050 5500
 F 0 "C39" H 1165 5546 50  0000 L CNN
 F 1 "33uF" H 1165 5455 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 1088 5350 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1088 5350 50  0001 C CNN
 F 3 "~" H 1050 5500 50  0001 C CNN
 	1    1050 5500
 	1    0    0    -1  
@@ -399,7 +380,7 @@ U 1 1 5F3A5D08
 P 2250 4350
 F 0 "C41" H 2365 4396 50  0000 L CNN
 F 1 "0.1uF" H 2365 4305 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2288 4200 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2288 4200 50  0001 C CNN
 F 3 "~" H 2250 4350 50  0001 C CNN
 	1    2250 4350
 	1    0    0    -1  
@@ -410,7 +391,7 @@ U 1 1 5F3A5D0E
 P 2650 4350
 F 0 "C44" H 2765 4396 50  0000 L CNN
 F 1 "33uF" H 2765 4305 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2688 4200 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2688 4200 50  0001 C CNN
 F 3 "~" H 2650 4350 50  0001 C CNN
 	1    2650 4350
 	1    0    0    -1  
@@ -459,7 +440,7 @@ U 1 1 5F3A7274
 P 1050 4400
 F 0 "C38" H 1165 4446 50  0000 L CNN
 F 1 "33uF" H 1165 4355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 1088 4250 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1088 4250 50  0001 C CNN
 F 3 "~" H 1050 4400 50  0001 C CNN
 	1    1050 4400
 	1    0    0    -1  
@@ -521,7 +502,7 @@ U 1 1 5F3E797E
 P 5000 3250
 F 0 "C51" H 5115 3296 50  0000 L CNN
 F 1 "0.1uF" H 5115 3205 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5038 3100 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5038 3100 50  0001 C CNN
 F 3 "~" H 5000 3250 50  0001 C CNN
 	1    5000 3250
 	1    0    0    -1  
@@ -532,7 +513,7 @@ U 1 1 5F3E7984
 P 5400 3250
 F 0 "C53" H 5515 3296 50  0000 L CNN
 F 1 "33uF" H 5515 3205 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5438 3100 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5438 3100 50  0001 C CNN
 F 3 "~" H 5400 3250 50  0001 C CNN
 	1    5400 3250
 	1    0    0    -1  
@@ -581,7 +562,7 @@ U 1 1 5F3E799F
 P 3800 3300
 F 0 "C49" H 3915 3346 50  0000 L CNN
 F 1 "33uF" H 3915 3255 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3838 3150 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3838 3150 50  0001 C CNN
 F 3 "~" H 3800 3300 50  0001 C CNN
 	1    3800 3300
 	1    0    0    -1  
@@ -632,7 +613,7 @@ U 1 1 5F3E9E7B
 P 5000 4800
 F 0 "C52" H 5115 4846 50  0000 L CNN
 F 1 "0.1uF" H 5115 4755 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5038 4650 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5038 4650 50  0001 C CNN
 F 3 "~" H 5000 4800 50  0001 C CNN
 	1    5000 4800
 	1    0    0    -1  
@@ -643,7 +624,7 @@ U 1 1 5F3E9E81
 P 5400 4800
 F 0 "C54" H 5515 4846 50  0000 L CNN
 F 1 "33uF" H 5515 4755 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5438 4650 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5438 4650 50  0001 C CNN
 F 3 "~" H 5400 4800 50  0001 C CNN
 	1    5400 4800
 	1    0    0    -1  
@@ -692,7 +673,7 @@ U 1 1 5F3E9E9C
 P 3800 4850
 F 0 "C50" H 3915 4896 50  0000 L CNN
 F 1 "33uF" H 3915 4805 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3838 4700 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3838 4700 50  0001 C CNN
 F 3 "~" H 3800 4850 50  0001 C CNN
 	1    3800 4850
 	1    0    0    -1  
@@ -726,30 +707,231 @@ F 3 "" H 4300 4850 50  0001 C CNN
 	1    4300 4850
 	1    0    0    -1  
 $EndComp
-Wire Notes Line
-	550  550  4600 550 
 Text Notes 1750 900  0    118  ~ 24
 PUERTO MICRO USB\n
 Wire Notes Line
 	4600 550  4600 2450
 Text Notes 1300 6300 0    118  ~ 24
-AL. FPGA\n\n
-Wire Notes Line
-	550  6250 3350 6250
+Aimentacion FPGA\n\n
 Wire Notes Line
 	3350 6250 3350 2450
-Wire Notes Line
-	550  550  550  6250
 Text Notes 4200 4100 0    118  ~ 24
-AL. MICRO\n\n
+Aimentacion  MICRO\n\n
 Text Notes 4200 5700 0    118  ~ 24
-AL. OMEGA\n\n\n
+Aimentacion OMEGA\n\n\n
 Wire Notes Line
 	3350 4000 6100 4000
-Wire Notes Line
-	550  2450 6100 2450
 Wire Notes Line
 	6100 5650 3350 5650
 Wire Notes Line
 	6100 2450 6100 5650
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5EB06BC1
+P 4900 900
+F 0 "H1" H 5000 949 50  0000 L CNN
+F 1 "MountingHole_Pad" H 5000 858 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm_Pad" H 4900 900 50  0001 C CNN
+F 3 "~" H 4900 900 50  0001 C CNN
+	1    4900 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0164
+U 1 1 5EB1173A
+P 4900 2000
+F 0 "#PWR0164" H 4900 1750 50  0001 C CNN
+F 1 "GND" H 4905 1827 50  0000 C CNN
+F 2 "" H 4900 2000 50  0001 C CNN
+F 3 "" H 4900 2000 50  0001 C CNN
+	1    4900 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 1000 4900 1250
+Wire Wire Line
+	4900 1750 4900 2000
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5EB1E5C6
+P 5800 900
+F 0 "H2" H 5900 949 50  0000 L CNN
+F 1 "MountingHole_Pad" H 5900 858 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm_Pad" H 5800 900 50  0001 C CNN
+F 3 "~" H 5800 900 50  0001 C CNN
+	1    5800 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0165
+U 1 1 5EB1E5DA
+P 5800 2000
+F 0 "#PWR0165" H 5800 1750 50  0001 C CNN
+F 1 "GND" H 5805 1827 50  0000 C CNN
+F 2 "" H 5800 2000 50  0001 C CNN
+F 3 "" H 5800 2000 50  0001 C CNN
+	1    5800 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 1000 5800 1250
+Wire Wire Line
+	5800 1750 5800 2000
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5EB1FEE1
+P 6700 900
+F 0 "H3" H 6800 949 50  0000 L CNN
+F 1 "MountingHole_Pad" H 6800 858 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm_Pad" H 6700 900 50  0001 C CNN
+F 3 "~" H 6700 900 50  0001 C CNN
+	1    6700 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0166
+U 1 1 5EB1FEF5
+P 6700 2000
+F 0 "#PWR0166" H 6700 1750 50  0001 C CNN
+F 1 "GND" H 6705 1827 50  0000 C CNN
+F 2 "" H 6700 2000 50  0001 C CNN
+F 3 "" H 6700 2000 50  0001 C CNN
+	1    6700 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 1000 6700 1250
+Wire Wire Line
+	6700 1750 6700 2000
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 5EB217A4
+P 7650 900
+F 0 "H4" H 7750 949 50  0000 L CNN
+F 1 "MountingHole_Pad" H 7750 858 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm_Pad" H 7650 900 50  0001 C CNN
+F 3 "~" H 7650 900 50  0001 C CNN
+	1    7650 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0167
+U 1 1 5EB217B8
+P 7650 2000
+F 0 "#PWR0167" H 7650 1750 50  0001 C CNN
+F 1 "GND" H 7655 1827 50  0000 C CNN
+F 2 "" H 7650 2000 50  0001 C CNN
+F 3 "" H 7650 2000 50  0001 C CNN
+	1    7650 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 1000 7650 1250
+Wire Notes Line
+	550  550  550  6250
+Wire Notes Line
+	550  6250 3350 6250
+Wire Notes Line
+	8550 2450 8550 550 
+Wire Notes Line
+	550  550  8550 550 
+Wire Notes Line
+	550  2450 8550 2450
+$Comp
+L proyecto_libreria:BLM18SG121TN1D-proy FB2
+U 1 1 5EBB0508
+P 1950 1350
+F 0 "FB2" H 1950 1565 50  0000 C CNN
+F 1 "BLM18SG121TN1D-proy" H 1950 1474 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2600 1450 50  0001 L CNN
+F 3 "https://www.murata.com/en-us/products/productdetail?partno=BLM18SG121TN1%23" H 2600 1350 50  0001 L CNN
+F 4 "Ferrite bead SMD 0603 120R 3A Murata Ferrite Bead (Chip Bead), 1.6 x 0.8 x 0.5mm (0603), 120 impedance at 100 MHz" H 2600 1250 50  0001 L CNN "Description"
+F 5 "0.75" H 2600 1150 50  0001 L CNN "Height"
+F 6 "Murata Electronics" H 2600 1050 50  0001 L CNN "Manufacturer_Name"
+F 7 "BLM18SG121TN1D" H 2600 950 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "81-BLM18SG121TN1D" H 2600 850 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=81-BLM18SG121TN1D" H 2600 750 50  0001 L CNN "Mouser Price/Stock"
+F 10 "7241447P" H 2600 650 50  0001 L CNN "RS Part Number"
+F 11 "http://uk.rs-online.com/web/p/products/7241447P" H 2600 550 50  0001 L CNN "RS Price/Stock"
+	1    1950 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L proyecto_libreria:BLM18SG121TN1D-proy FB3
+U 1 1 5EBB9E85
+P 4900 1500
+F 0 "FB3" V 4854 1578 50  0000 L CNN
+F 1 "BLM18SG121TN1D-proy" V 4945 1578 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5550 1600 50  0001 L CNN
+F 3 "https://www.murata.com/en-us/products/productdetail?partno=BLM18SG121TN1%23" H 5550 1500 50  0001 L CNN
+F 4 "Ferrite bead SMD 0603 120R 3A Murata Ferrite Bead (Chip Bead), 1.6 x 0.8 x 0.5mm (0603), 120 impedance at 100 MHz" H 5550 1400 50  0001 L CNN "Description"
+F 5 "0.75" H 5550 1300 50  0001 L CNN "Height"
+F 6 "Murata Electronics" H 5550 1200 50  0001 L CNN "Manufacturer_Name"
+F 7 "BLM18SG121TN1D" H 5550 1100 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "81-BLM18SG121TN1D" H 5550 1000 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=81-BLM18SG121TN1D" H 5550 900 50  0001 L CNN "Mouser Price/Stock"
+F 10 "7241447P" H 5550 800 50  0001 L CNN "RS Part Number"
+F 11 "http://uk.rs-online.com/web/p/products/7241447P" H 5550 700 50  0001 L CNN "RS Price/Stock"
+	1    4900 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L proyecto_libreria:BLM18SG121TN1D-proy FB4
+U 1 1 5EBBC04B
+P 5800 1500
+F 0 "FB4" V 5754 1578 50  0000 L CNN
+F 1 "BLM18SG121TN1D-proy" V 5845 1578 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6450 1600 50  0001 L CNN
+F 3 "https://www.murata.com/en-us/products/productdetail?partno=BLM18SG121TN1%23" H 6450 1500 50  0001 L CNN
+F 4 "Ferrite bead SMD 0603 120R 3A Murata Ferrite Bead (Chip Bead), 1.6 x 0.8 x 0.5mm (0603), 120 impedance at 100 MHz" H 6450 1400 50  0001 L CNN "Description"
+F 5 "0.75" H 6450 1300 50  0001 L CNN "Height"
+F 6 "Murata Electronics" H 6450 1200 50  0001 L CNN "Manufacturer_Name"
+F 7 "BLM18SG121TN1D" H 6450 1100 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "81-BLM18SG121TN1D" H 6450 1000 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=81-BLM18SG121TN1D" H 6450 900 50  0001 L CNN "Mouser Price/Stock"
+F 10 "7241447P" H 6450 800 50  0001 L CNN "RS Part Number"
+F 11 "http://uk.rs-online.com/web/p/products/7241447P" H 6450 700 50  0001 L CNN "RS Price/Stock"
+	1    5800 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L proyecto_libreria:BLM18SG121TN1D-proy FB5
+U 1 1 5EBBC5CD
+P 6700 1500
+F 0 "FB5" V 6654 1578 50  0000 L CNN
+F 1 "BLM18SG121TN1D-proy" V 6745 1578 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7350 1600 50  0001 L CNN
+F 3 "https://www.murata.com/en-us/products/productdetail?partno=BLM18SG121TN1%23" H 7350 1500 50  0001 L CNN
+F 4 "Ferrite bead SMD 0603 120R 3A Murata Ferrite Bead (Chip Bead), 1.6 x 0.8 x 0.5mm (0603), 120 impedance at 100 MHz" H 7350 1400 50  0001 L CNN "Description"
+F 5 "0.75" H 7350 1300 50  0001 L CNN "Height"
+F 6 "Murata Electronics" H 7350 1200 50  0001 L CNN "Manufacturer_Name"
+F 7 "BLM18SG121TN1D" H 7350 1100 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "81-BLM18SG121TN1D" H 7350 1000 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=81-BLM18SG121TN1D" H 7350 900 50  0001 L CNN "Mouser Price/Stock"
+F 10 "7241447P" H 7350 800 50  0001 L CNN "RS Part Number"
+F 11 "http://uk.rs-online.com/web/p/products/7241447P" H 7350 700 50  0001 L CNN "RS Price/Stock"
+	1    6700 1500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7650 1750 7650 2000
+$Comp
+L proyecto_libreria:BLM18SG121TN1D-proy FB6
+U 1 1 5EBBD7F3
+P 7650 1500
+F 0 "FB6" V 7604 1578 50  0000 L CNN
+F 1 "BLM18SG121TN1D-proy" V 7695 1578 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8300 1600 50  0001 L CNN
+F 3 "https://www.murata.com/en-us/products/productdetail?partno=BLM18SG121TN1%23" H 8300 1500 50  0001 L CNN
+F 4 "Ferrite bead SMD 0603 120R 3A Murata Ferrite Bead (Chip Bead), 1.6 x 0.8 x 0.5mm (0603), 120 impedance at 100 MHz" H 8300 1400 50  0001 L CNN "Description"
+F 5 "0.75" H 8300 1300 50  0001 L CNN "Height"
+F 6 "Murata Electronics" H 8300 1200 50  0001 L CNN "Manufacturer_Name"
+F 7 "BLM18SG121TN1D" H 8300 1100 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "81-BLM18SG121TN1D" H 8300 1000 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=81-BLM18SG121TN1D" H 8300 900 50  0001 L CNN "Mouser Price/Stock"
+F 10 "7241447P" H 8300 800 50  0001 L CNN "RS Part Number"
+F 11 "http://uk.rs-online.com/web/p/products/7241447P" H 8300 700 50  0001 L CNN "RS Price/Stock"
+	1    7650 1500
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

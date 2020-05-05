@@ -1,4 +1,4 @@
-16287411416927848
+16290589286469848
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -72891,6 +72891,13 @@ varistor SIOV
 2
 2
 libreria_proyecto_fp
+742792651roy
+0603-T0.2
+Ferrite Bead
+0
+2
+2
+libreria_proyecto_fp
 AD7918BRUZ-proy
 
 
@@ -72918,6 +72925,13 @@ Switch
 0
 4
 4
+libreria_proyecto_fp
+SOD-323-proy
+
+
+0
+2
+2
 libreria_proyecto_fp
 SOIC127P790X216-8N-proy
 

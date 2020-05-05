@@ -36,6 +36,12 @@ K low side switch
 F https://www.infineon.com/dgdl/Infineon-AUIPS2052G-DS-v01_00-EN.pdf?fileId=5546d4625a888733015aae0b6fb04c51
 $ENDCMP
 #
+$CMP CWX823-025.0M-proy
+D HCMOS Crystal Clock Oscillator, 2.5x2.0 mm SMD
+K Crystal Clock Oscillator ECS SMD
+F https://www.ecsxtal.com/store/pdf/ECS-2520MV.pdf
+$ENDCMP
+#
 $CMP ICE40UP5K-SG48ITR50-proy
 D iCE40 UltraPlus FPGA, 5280 LUTs, 1.2V, 48-pin QFN
 K FPGA programmable logic

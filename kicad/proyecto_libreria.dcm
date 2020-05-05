@@ -66,6 +66,10 @@ K onion omega module
 F https://docs.onion.io/omega2-docs/omega2p.html
 $ENDCMP
 #
+$CMP SRF2012A-900YA-proy
+F https://media.digikey.com/pdf/Data%20Sheets/Bourns%20PDFs/SRF2012AA_Series_DS.pdf
+$ENDCMP
+#
 $CMP STM32F100RBT6B-proy
 D ARM Cortex-M3 MCU, 64KB flash, 8KB RAM, 24MHz, 2-3.6V, 51 GPIO, LQFP-64
 K ARM Cortex-M3 STM32F1 STM32F100 Value Line
