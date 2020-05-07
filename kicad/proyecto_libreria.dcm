@@ -48,6 +48,12 @@ K FPGA programmable logic
 F http://www.latticesemi.com/Products/FPGAandCPLD/iCE40Ultra
 $ENDCMP
 #
+$CMP ICE40UP5K-proy
+D iCE40 UltraPlus FPGA, 5280 LUTs, 1.2V, 48-pin QFN
+K FPGA programmable logic
+F http://www.latticesemi.com/Products/FPGAandCPLD/iCE40Ultra
+$ENDCMP
+#
 $CMP LL3301NF065QG
 D Push button switch, generic, symbol, four pins
 K switch normally-open pushbutton push-button

@@ -48,6 +48,12 @@ K FPGA programmable logic
 F http://www.latticesemi.com/Products/FPGAandCPLD/iCE40Ultra
 $ENDCMP
 #
+$CMP ICE40UP5K-proy
+D iCE40 UltraPlus FPGA, 5280 LUTs, 1.2V, 48-pin QFN
+K FPGA programmable logic
+F http://www.latticesemi.com/Products/FPGAandCPLD/iCE40Ultra
+$ENDCMP
+#
 $CMP LL3301NF065QG
 D Push button switch, generic, symbol, four pins
 K switch normally-open pushbutton push-button
@@ -64,6 +70,10 @@ $CMP Omega2-proy
 D Iot Computer Module by Onion
 K onion omega module
 F https://docs.onion.io/omega2-docs/omega2p.html
+$ENDCMP
+#
+$CMP SRF2012A-900YA-proy
+F https://media.digikey.com/pdf/Data%20Sheets/Bourns%20PDFs/SRF2012AA_Series_DS.pdf
 $ENDCMP
 #
 $CMP STM32F100RBT6B-proy

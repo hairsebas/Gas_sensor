@@ -1,4 +1,4 @@
-16290589286469848
+16292179399211848
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -72920,6 +72920,13 @@ CWX823-025.0M-proy
 4
 libreria_proyecto_fp
 LL3301NF065QG
+LL3301NF065QG
+Switch
+0
+4
+4
+libreria_proyecto_fp
+LL3301NF065QG-proy
 LL3301NF065QG
 Switch
 0

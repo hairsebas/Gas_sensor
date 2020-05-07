@@ -517,12 +517,8 @@ Text Notes 3200 1050 0    118  ~ 24
 ONION OMEGA 2+\n
 Wire Notes Line
 	8300 2650 5000 2650
-Wire Notes Line
-	600  550  8300 550 
 Text Notes 6650 2450 0    118  ~ 24
 PUERTO USB\n
-Wire Notes Line
-	600  4550 8300 4550
 Wire Notes Line
 	8300 550  8300 4550
 Text Notes 6850 4300 0    118  ~ 24
@@ -730,12 +726,18 @@ Wire Wire Line
 	600  3100 1100 3100
 Wire Wire Line
 	1100 2950 600  2950
-Wire Bus Line
-	4450 5100 4450 5700
-Wire Bus Line
-	2150 5100 2150 5700
 Text Label 5350 5500 2    50   ~ 0
 SPI_CLK
 Text Label 5350 5350 2    50   ~ 0
 SPI_MOSI
+Wire Notes Line
+	550  550  550  4550
+Wire Notes Line
+	550  550  8300 550 
+Wire Notes Line
+	550  4550 8300 4550
+Wire Bus Line
+	4450 5100 4450 5700
+Wire Bus Line
+	2150 5100 2150 5700
 $EndSCHEMATC
