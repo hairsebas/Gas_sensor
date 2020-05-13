@@ -1,6 +1,6 @@
-(module SOD-323-proy (layer F.Cu) (tedit 5EA12032)
+(module SOD-323-proy (layer F.Cu) (tedit 5EBA266E)
   (fp_text reference REF** (at 1.628695 -2.539895) (layer F.SilkS)
-    (effects (font (size 1.00226 1.00226) (thickness 0.015)))
+    (effects (font (size 1.00226 1.00226) (thickness 0.15)))
   )
   (fp_text value SOD-323-proy (at 2.76312 2.22698) (layer F.Fab)
     (effects (font (size 1.006598 1.006598) (thickness 0.015)))

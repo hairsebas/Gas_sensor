@@ -181,14 +181,14 @@ Wire Wire Line
 Wire Wire Line
 	4550 800  4100 800 
 Connection ~ 4550 800 
-Text HLabel 5650 3200 2    50   Input ~ 0
-UART_RX
-Text HLabel 5650 3100 2    50   Output ~ 0
-UART_TX
+Text HLabel 1450 5050 0    50   Input ~ 0
+UART_M_RX
+Text HLabel 1450 4950 0    50   Output ~ 0
+UART_M_TX
 Wire Wire Line
-	5650 3100 5450 3100
+	1450 4950 1650 4950
 Wire Wire Line
-	5450 3200 5650 3200
+	1650 5050 1450 5050
 $Comp
 L Device:R R17
 U 1 1 5EBE6977
@@ -262,22 +262,22 @@ Text HLabel 1350 6500 0    50   BiDi ~ 0
 SPI_mf[3..0]
 Wire Bus Line
 	1350 6500 1450 6500
-Text Label 2650 6900 2    50   ~ 0
-SPI_micro_MISO
-Text Label 2650 7000 2    50   ~ 0
-SPI_micro_MOSI
 Text Label 2650 6700 2    50   ~ 0
-SPI_micro_SS
+SPI_micro_MISO
 Text Label 2650 6800 2    50   ~ 0
+SPI_micro_MOSI
+Text Label 2650 7000 2    50   ~ 0
+SPI_micro_SS
+Text Label 2650 6900 2    50   ~ 0
 SPI_micro_CLK
-Wire Wire Line
-	1550 6900 2650 6900
-Wire Wire Line
-	1550 7000 2650 7000
 Wire Wire Line
 	1550 6700 2650 6700
 Wire Wire Line
 	1550 6800 2650 6800
+Wire Wire Line
+	1550 7000 2650 7000
+Wire Wire Line
+	1550 6900 2650 6900
 Wire Wire Line
 	5450 4550 6000 4550
 Wire Wire Line
@@ -378,8 +378,6 @@ NoConn ~ 1650 5450
 NoConn ~ 1650 5350
 NoConn ~ 1650 5250
 NoConn ~ 1650 5150
-NoConn ~ 1650 5050
-NoConn ~ 1650 4950
 NoConn ~ 1650 4850
 NoConn ~ 1650 4750
 NoConn ~ 1650 4650
@@ -483,6 +481,8 @@ Text Label 6550 4350 2    50   ~ 0
 JTAG_Micro_TRST
 Wire Wire Line
 	5450 4350 6550 4350
+NoConn ~ 5450 3100
+NoConn ~ 5450 3200
 Wire Bus Line
 	3350 6500 3350 6700
 Wire Bus Line

@@ -192,10 +192,6 @@ Wire Wire Line
 	1950 1200 1950 1400
 Wire Wire Line
 	2450 700  2450 1500
-Text Label 1400 2650 0    50   ~ 0
-RX_1
-Text Label 1400 2800 0    50   ~ 0
-TX_1
 Text Label 4550 5200 0    50   ~ 0
 SPI_fo0
 Text Label 4550 5350 0    50   ~ 0
@@ -303,7 +299,7 @@ AR Path="/5E81C316/5EE9FAAA" Ref="C34"  Part="1"
 AR Path="/5F32452B/5EE9FAAA" Ref="C?"  Part="1" 
 F 0 "C34" H 6615 1096 50  0000 L CNN
 F 1 "22uF" H 6615 1005 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6538 900 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6538 900 50  0001 C CNN
 F 3 "~" H 6500 1050 50  0001 C CNN
 	1    6500 1050
 	1    0    0    -1  
@@ -452,7 +448,7 @@ AR Path="/5E81C316/5EEE0837" Ref="C36"  Part="1"
 AR Path="/5F32452B/5EEE0837" Ref="C?"  Part="1" 
 F 0 "C36" H 7565 3596 50  0000 L CNN
 F 1 "22uF" H 7565 3505 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7488 3400 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7488 3400 50  0001 C CNN
 F 3 "~" H 7450 3550 50  0001 C CNN
 	1    7450 3550
 	1    0    0    -1  
@@ -547,7 +543,7 @@ U 1 1 5EBA7386
 P 6450 3600
 F 0 "SW2" V 6496 3312 50  0000 R CNN
 F 1 "LL3301NF065QG-proy" V 6405 3312 50  0000 R CNN
-F 2 "libreria_proyecto_fp:LL3301NF065QG" H 6450 3800 50  0001 C CNN
+F 2 "libreria_proyecto_fp:LL3301NF065QG-proy" H 6450 3800 50  0001 C CNN
 F 3 "~" H 6450 3800 50  0001 C CNN
 	1    6450 3600
 	0    -1   -1   0   
@@ -638,9 +634,9 @@ Wire Wire Line
 Wire Wire Line
 	1300 2800 1750 2800
 Text HLabel 1300 2800 0    50   Output ~ 0
-UART_TX
+UART_O_TX
 Text HLabel 1300 2650 0    50   Input ~ 0
-UART_RX
+UART_O_RX
 Wire Wire Line
 	1400 2950 1750 2950
 Wire Wire Line

@@ -39,7 +39,7 @@ U 1 1 5E9A0CF9
 P 4950 3850
 F 0 "D2" H 4943 3595 50  0000 C CNN
 F 1 "LED" H 4943 3686 50  0000 C CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4950 3850 50  0001 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4950 3850 50  0001 C CNN
 F 3 "~" H 4950 3850 50  0001 C CNN
 	1    4950 3850
 	-1   0    0    1   
@@ -117,13 +117,13 @@ F 3 "" H 11600 6350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 12600 5850 2    50   ~ 0
-ICE40_SDO
+ICE40_MISO
 Text Label 12600 6000 2    50   ~ 0
-ICE40_SDI
+ICE40_MOSI
 Text Label 12600 5700 2    50   ~ 0
-ICE40_SCK
+ICE40_CLK
 Text Label 11000 6000 2    50   ~ 0
-ICE40_SS
+ICE40_CS
 Wire Wire Line
 	10700 5550 10700 5850
 Wire Wire Line
@@ -215,48 +215,6 @@ F 3 "" H 5250 3300 50  0001 C CNN
 $EndComp
 Text Label 4300 3750 2    50   ~ 0
 CRESET_B
-$Comp
-L Diode:1N5819 D1
-U 1 1 5EA8B345
-P 4000 2900
-F 0 "D1" H 4000 3116 50  0000 C CNN
-F 1 "1N5819" H 4000 3025 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-123" H 4000 2725 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 4000 2900 50  0001 C CNN
-	1    4000 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C6
-U 1 1 5EA8DBE0
-P 4250 2750
-F 0 "C6" H 4365 2796 50  0000 L CNN
-F 1 "0.1uF" H 4365 2705 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4288 2600 50  0001 C CNN
-F 3 "~" H 4250 2750 50  0001 C CNN
-	1    4250 2750
-	1    0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR0111
-U 1 1 5EA8EA78
-P 4250 2600
-F 0 "#PWR0111" H 4250 2350 50  0001 C CNN
-F 1 "GND" H 4255 2427 50  0000 C CNN
-F 2 "" H 4250 2600 50  0001 C CNN
-F 3 "" H 4250 2600 50  0001 C CNN
-	1    4250 2600
-	-1   0    0    1   
-$EndComp
-Text GLabel 4350 2900 2    50   Input ~ 0
-3.3V_FPGA
-Wire Wire Line
-	4350 2900 4250 2900
-Connection ~ 4250 2900
-Wire Wire Line
-	4250 2900 4150 2900
-Wire Wire Line
-	3850 2900 3750 2900
 Wire Wire Line
 	3750 3000 4500 3000
 Wire Wire Line
@@ -272,7 +230,7 @@ Connection ~ 4500 3850
 Wire Wire Line
 	5700 3000 6050 3000
 Text GLabel 6050 3000 2    50   Input ~ 0
-3.3V_FPGA
++3.3V_FPGA
 $Comp
 L power:GND #PWR0112
 U 1 1 5EB5F92A
@@ -284,14 +242,6 @@ F 3 "" H 3750 5600 50  0001 C CNN
 	1    3750 5600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3750 5350 4300 5350
-Text Label 4300 5350 2    50   ~ 0
-ICE40_SS
-Wire Wire Line
-	3750 5150 4300 5150
-Text Label 4300 5150 2    50   ~ 0
-ICE40_SDI
 Wire Wire Line
 	2500 8050 3600 8050
 Wire Wire Line
@@ -311,11 +261,11 @@ Entry Wire Line
 Wire Bus Line
 	2450 6900 2000 6900
 Wire Wire Line
-	1550 3800 1000 3800
-Text Label 1000 3800 0    50   ~ 0
+	1550 4000 1000 4000
+Text Label 1000 4000 0    50   ~ 0
 ADC_CS
 Wire Wire Line
-	1550 4000 1000 4000
+	1550 3800 1000 3800
 Wire Wire Line
 	1550 4100 1000 4100
 Wire Wire Line
@@ -324,57 +274,6 @@ Wire Wire Line
 	1550 4200 1000 4200
 Text Label 1000 4200 0    50   ~ 0
 ADC_DOUT
-$Comp
-L power:GND #PWR0108
-U 1 1 5ED5CB1A
-P 6500 5300
-F 0 "#PWR0108" H 6500 5050 50  0001 C CNN
-F 1 "GND" H 6505 5127 50  0000 C CNN
-F 2 "" H 6500 5300 50  0001 C CNN
-F 3 "" H 6500 5300 50  0001 C CNN
-	1    6500 5300
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6250 5400 6600 5400
-Text Label 6600 5400 2    50   ~ 0
-PIO4
-Wire Wire Line
-	6250 5500 6600 5500
-Text Label 6600 5500 2    50   ~ 0
-PIO6
-Wire Wire Line
-	6250 5600 6600 5600
-Text Label 6600 5600 2    50   ~ 0
-PIO8
-Wire Wire Line
-	6250 5700 6600 5700
-Text Label 6600 5700 2    50   ~ 0
-PIO10
-Wire Wire Line
-	6250 5800 6600 5800
-Text Label 6600 5800 2    50   ~ 0
-PIO12
-Text Label 6600 5900 2    50   ~ 0
-PIO14
-Wire Wire Line
-	6600 5900 6250 5900
-Wire Wire Line
-	6250 6000 6600 6000
-Text Label 6600 6000 2    50   ~ 0
-PIO16
-Wire Wire Line
-	6250 6100 6600 6100
-Text Label 6600 6100 2    50   ~ 0
-PIO18
-Wire Wire Line
-	6250 6200 6600 6200
-Text Label 6600 6200 2    50   ~ 0
-PIO20
-Wire Wire Line
-	6250 6300 6600 6300
-Text Label 6600 6300 2    50   ~ 0
-PIO22
 NoConn ~ 1550 5200
 NoConn ~ 1550 5300
 NoConn ~ 1550 5400
@@ -420,7 +319,7 @@ F 3 "" V 11900 3950 60  0000 C CNN
 $EndComp
 Text Label 1000 4100 0    50   ~ 0
 ADC_DIN
-Text Label 1000 4000 0    50   ~ 0
+Text Label 1000 3800 0    50   ~ 0
 ADC_SCLK
 Text Label 4300 4750 2    50   ~ 0
 CLK_IN
@@ -964,7 +863,7 @@ AR Path="/5E81C316/5F1BA218" Ref="C?"  Part="1"
 AR Path="/5E81C2A4/5F1BA218" Ref="C14"  Part="1" 
 F 0 "C14" H 9565 5346 50  0000 L CNN
 F 1 "22uF" H 9565 5255 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9488 5150 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9488 5150 50  0001 C CNN
 F 3 "~" H 9450 5300 50  0001 C CNN
 	1    9450 5300
 	1    0    0    -1  
@@ -1124,10 +1023,6 @@ Wire Notes Line
 	13500 600  600  600 
 Wire Notes Line
 	13500 600  13500 8400
-Text GLabel 5400 5300 0    50   Input ~ 0
-+3.3V_FPGA
-Wire Wire Line
-	5400 5300 5750 5300
 $Comp
 L Device:C C31
 U 1 1 5ED466E4
@@ -1140,7 +1035,7 @@ F 3 "~" H 3750 3350 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 Text GLabel 3850 3200 2    50   Input ~ 0
-3.3V_FPGA
++3.3V_FPGA
 $Comp
 L power:GND #PWR0133
 U 1 1 5ED47296
@@ -1167,16 +1062,6 @@ Wire Wire Line
 	2550 7050 3650 7050
 Wire Wire Line
 	2550 7150 3650 7150
-Wire Wire Line
-	5100 7450 6200 7450
-Wire Wire Line
-	5100 7350 6200 7350
-Wire Wire Line
-	5100 7250 6200 7250
-Wire Wire Line
-	5100 7150 6200 7150
-Wire Wire Line
-	5100 7050 6200 7050
 Text Label 5350 7450 0    50   ~ 0
 SPI_fo4
 Text Label 5350 7350 0    50   ~ 0
@@ -1189,8 +1074,6 @@ Text Label 5350 7050 0    50   ~ 0
 SPI_fo0
 Entry Wire Line
 	5000 7350 5100 7450
-Text Label 6200 7450 2    50   ~ 0
-CRESET_B
 Text HLabel 4550 6900 0    50   BiDi ~ 0
 SPI_fo[4..0]
 Wire Bus Line
@@ -1203,19 +1086,11 @@ Entry Wire Line
 	5000 7050 5100 7150
 Entry Wire Line
 	5000 6950 5100 7050
-Text Label 6200 7350 2    50   ~ 0
-ICE40_SCK
-Text Label 6200 7250 2    50   ~ 0
-ICE40_SS
-Text Label 6200 7150 2    50   ~ 0
-ICE40_SDI
-Text Label 6200 7050 2    50   ~ 0
-ICE40_SDO
 Text Label 3650 7350 2    50   ~ 0
 ICE40_CSS
-Text Label 3650 7250 2    50   ~ 0
-ICE40_CMOSI
 Text Label 3650 7150 2    50   ~ 0
+ICE40_CMOSI
+Text Label 3650 7250 2    50   ~ 0
 ICE40_CSCK
 Text Label 2650 7350 0    50   ~ 0
 SPI_mf3
@@ -1236,7 +1111,7 @@ I2C_FPGA_SDA
 Wire Wire Line
 	3750 4550 4300 4550
 Text Label 4300 4550 2    50   ~ 0
-ICE40_CMOSI
+ICE40_CSCK
 Entry Wire Line
 	2450 6950 2550 7050
 Wire Wire Line
@@ -1379,7 +1254,7 @@ AR Path="/5E81C316/5EBF33FF" Ref="SW?"  Part="1"
 AR Path="/5E81C2A4/5EBF33FF" Ref="SW1"  Part="1" 
 F 0 "SW1" V 8496 5062 50  0000 R CNN
 F 1 "LL3301NF065QG-proy" V 8405 5062 50  0000 R CNN
-F 2 "libreria_proyecto_fp:LL3301NF065QG" H 8450 5550 50  0001 C CNN
+F 2 "libreria_proyecto_fp:LL3301NF065QG-proy" H 8450 5550 50  0001 C CNN
 F 3 "~" H 8450 5550 50  0001 C CNN
 	1    8450 5350
 	0    -1   -1   0   
@@ -1388,160 +1263,257 @@ Text Label 4850 4350 2    50   ~ 0
 I2C_FPGA_SCL
 Wire Wire Line
 	3750 4350 4850 4350
-$Comp
-L Connector_Generic:Conn_02x11_Odd_Even J1
-U 1 1 5EE27110
-P 5950 5800
-F 0 "J1" H 6000 6517 50  0000 C CNN
-F 1 "Conn_02x11_Odd_Even" H 6000 6426 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x11_P2.54mm_Vertical" H 5950 5800 50  0001 C CNN
-F 3 "~" H 5950 5800 50  0001 C CNN
-	1    5950 5800
-	1    0    0    -1  
-$EndComp
 Text Label 4300 4950 2    50   ~ 0
-ICE40_CMISO
+ICE40_CMOSI
 Wire Wire Line
 	3750 4950 4300 4950
 Text Label 4300 4850 2    50   ~ 0
-ICE40_CSCK
+ICE40_CMISO
 Text Label 1000 3900 0    50   ~ 0
 ICE40_CSS
 Wire Wire Line
 	3750 4850 4300 4850
 Wire Wire Line
 	1550 3900 1000 3900
-Wire Wire Line
-	6500 5300 6250 5300
-NoConn ~ 3750 4650
-Text Label 5400 6300 0    50   ~ 0
-PIO21
-Wire Wire Line
-	5750 6300 5400 6300
-Text Label 5400 6200 0    50   ~ 0
-PIO19
-Wire Wire Line
-	5750 6200 5400 6200
-Text Label 5400 6100 0    50   ~ 0
-PIO17
-Wire Wire Line
-	5750 6100 5400 6100
-Text Label 5400 6000 0    50   ~ 0
-PIO15
-Wire Wire Line
-	5750 6000 5400 6000
-Text Label 5400 5900 0    50   ~ 0
-PIO13
-Wire Wire Line
-	5750 5900 5400 5900
-Text Label 5400 5800 0    50   ~ 0
-PIO11
-Wire Wire Line
-	5750 5800 5400 5800
-Text Label 5400 5700 0    50   ~ 0
-PIO9
-Wire Wire Line
-	5750 5700 5400 5700
-Text Label 5400 5600 0    50   ~ 0
-PIO7
-Wire Wire Line
-	5750 5600 5400 5600
-Text Label 5400 5500 0    50   ~ 0
-PIO5
-Wire Wire Line
-	5750 5500 5400 5500
-Wire Wire Line
-	5750 5400 5400 5400
-Text Label 5400 5400 0    50   ~ 0
-PIO3
 Text Label 1200 4700 0    50   ~ 0
-PIO19
+PIO20
 Wire Wire Line
 	1550 4700 1200 4700
 Text Label 1200 4600 0    50   ~ 0
-PIO17
+PIO18
 Wire Wire Line
 	1550 4600 1200 4600
 Text Label 1200 5100 0    50   ~ 0
-PIO15
+PIO16
 Wire Wire Line
 	1550 5100 1200 5100
 Text Label 1200 2850 0    50   ~ 0
-PIO13
+PIO14
 Wire Wire Line
 	1550 2850 1200 2850
-Text Label 1200 2650 0    50   ~ 0
-PIO11
 Wire Wire Line
 	1550 2650 1200 2650
 Text Label 1200 2950 0    50   ~ 0
-PIO9
+PIO10
 Wire Wire Line
 	1550 2950 1200 2950
 Text Label 1200 3350 0    50   ~ 0
-PIO7
+PIO8
 Wire Wire Line
 	1550 3350 1200 3350
 Wire Wire Line
 	3750 4150 4100 4150
 Text Label 4100 4150 2    50   ~ 0
-PIO4
+PIO3
 Wire Wire Line
 	1550 3250 1200 3250
 Text Label 1200 3250 0    50   ~ 0
-PIO6
+PIO5
 Wire Wire Line
 	1550 3150 1200 3150
 Text Label 1200 3150 0    50   ~ 0
-PIO8
+PIO7
 Wire Wire Line
 	1550 2750 1200 2750
 Wire Wire Line
 	1550 3050 1200 3050
 Text Label 1200 3050 0    50   ~ 0
-PIO12
+PIO11
 Text Label 1200 4900 0    50   ~ 0
-PIO14
+PIO13
 Wire Wire Line
 	1200 4900 1550 4900
 Wire Wire Line
 	1550 5000 1200 5000
 Text Label 1200 5000 0    50   ~ 0
-PIO16
+PIO15
 Wire Wire Line
 	1550 4800 1200 4800
 Text Label 1200 4800 0    50   ~ 0
-PIO18
+PIO17
 Wire Wire Line
 	1550 4500 1200 4500
 Text Label 1200 4500 0    50   ~ 0
-PIO20
+PIO19
 Text Label 4100 4250 2    50   ~ 0
-PIO3
+PIO4
 Wire Wire Line
 	3750 4250 4100 4250
 Wire Wire Line
 	3750 4050 4100 4050
 Text Label 4100 4050 2    50   ~ 0
-PIO5
+PIO6
 Text Label 1200 2750 0    50   ~ 0
-PIO10
+PIO9
 Wire Wire Line
 	1550 4400 1200 4400
 Text Label 1200 4400 0    50   ~ 0
-PIO21
-Text Label 4300 5250 2    50   ~ 0
-ICE40_SDO
-Wire Wire Line
-	3750 5250 4300 5250
-Wire Wire Line
-	4600 5000 5150 5000
-Text Label 5150 5000 2    50   ~ 0
-ICE40_SCK
+PIO22
 Wire Wire Line
 	1550 4300 1200 4300
 Text Label 1200 4300 0    50   ~ 0
+PIO21
+Text GLabel 4350 2900 2    50   Input ~ 0
++2.5V_FPGA
+Wire Wire Line
+	3750 2900 4350 2900
+Text Label 1200 2650 0    50   ~ 0
+PIO12
+Wire Wire Line
+	5100 7450 6200 7450
+Wire Wire Line
+	5100 7350 6200 7350
+Wire Wire Line
+	5100 7250 6200 7250
+Wire Wire Line
+	5100 7150 6200 7150
+Wire Wire Line
+	5100 7050 6200 7050
+Text Label 6200 7450 2    50   ~ 0
+CRESET_B
+Text Label 6200 7350 2    50   ~ 0
+ICE40_CS
+Text Label 6200 7150 2    50   ~ 0
+ICE40_MOSI
+Text Label 6200 7050 2    50   ~ 0
+ICE40_MISO
+Text Label 6200 7250 2    50   ~ 0
+ICE40_CLK
+$Comp
+L power:GND #PWR0108
+U 1 1 5ED5CB1A
+P 6700 5700
+F 0 "#PWR0108" H 6700 5450 50  0001 C CNN
+F 1 "GND" H 6705 5527 50  0000 C CNN
+F 2 "" H 6700 5700 50  0001 C CNN
+F 3 "" H 6700 5700 50  0001 C CNN
+	1    6700 5700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6450 5800 6800 5800
+Text Label 6800 5800 2    50   ~ 0
+PIO4
+Wire Wire Line
+	6450 5900 6800 5900
+Text Label 6800 5900 2    50   ~ 0
+PIO6
+Wire Wire Line
+	6450 6000 6800 6000
+Text Label 6800 6000 2    50   ~ 0
+PIO8
+Wire Wire Line
+	6450 6100 6800 6100
+Text Label 6800 6100 2    50   ~ 0
+PIO10
+Wire Wire Line
+	6450 6200 6800 6200
+Text Label 6800 6200 2    50   ~ 0
+PIO12
+Text Label 6800 6300 2    50   ~ 0
+PIO14
+Wire Wire Line
+	6800 6300 6450 6300
+Wire Wire Line
+	6450 6400 6800 6400
+Text Label 6800 6400 2    50   ~ 0
+PIO16
+Wire Wire Line
+	6450 6500 6800 6500
+Text Label 6800 6500 2    50   ~ 0
+PIO18
+Wire Wire Line
+	6450 6600 6800 6600
+Text Label 6800 6600 2    50   ~ 0
+PIO20
+Wire Wire Line
+	6450 6700 6800 6700
+Text Label 6800 6700 2    50   ~ 0
 PIO22
+Text GLabel 5600 5700 0    50   Input ~ 0
++3.3V_FPGA
+Wire Wire Line
+	5600 5700 5950 5700
+$Comp
+L Connector_Generic:Conn_02x11_Odd_Even J1
+U 1 1 5EE27110
+P 6150 6200
+F 0 "J1" H 6200 6917 50  0000 C CNN
+F 1 "Conn_02x11_Odd_Even" H 6200 6826 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x11_P2.54mm_Vertical" H 6150 6200 50  0001 C CNN
+F 3 "~" H 6150 6200 50  0001 C CNN
+	1    6150 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 5700 6450 5700
+Text Label 5600 6700 0    50   ~ 0
+PIO21
+Wire Wire Line
+	5950 6700 5600 6700
+Text Label 5600 6600 0    50   ~ 0
+PIO19
+Wire Wire Line
+	5950 6600 5600 6600
+Text Label 5600 6500 0    50   ~ 0
+PIO17
+Wire Wire Line
+	5950 6500 5600 6500
+Text Label 5600 6400 0    50   ~ 0
+PIO15
+Wire Wire Line
+	5950 6400 5600 6400
+Text Label 5600 6300 0    50   ~ 0
+PIO13
+Wire Wire Line
+	5950 6300 5600 6300
+Text Label 5600 6200 0    50   ~ 0
+PIO11
+Wire Wire Line
+	5950 6200 5600 6200
+Text Label 5600 6100 0    50   ~ 0
+PIO9
+Wire Wire Line
+	5950 6100 5600 6100
+Text Label 5600 6000 0    50   ~ 0
+PIO7
+Wire Wire Line
+	5950 6000 5600 6000
+Text Label 5600 5900 0    50   ~ 0
+PIO5
+Wire Wire Line
+	5950 5900 5600 5900
+Wire Wire Line
+	5950 5800 5600 5800
+Text Label 5600 5800 0    50   ~ 0
+PIO3
+Text Label 4300 5350 2    50   ~ 0
+ICE40_CS
+Text Label 4300 5150 2    50   ~ 0
+ICE40_MOSI
+Text Label 4300 5050 2    50   ~ 0
+ICE40_MISO
+Text Label 4300 5250 2    50   ~ 0
+ICE40_CLK
+Wire Wire Line
+	3750 5050 4300 5050
+Wire Wire Line
+	4300 5150 3750 5150
+Wire Wire Line
+	3750 5250 4300 5250
+Wire Wire Line
+	3750 5350 4300 5350
+$Comp
+L power:GND #PWR0111
+U 1 1 5EEA982E
+P 3750 4650
+F 0 "#PWR0111" H 3750 4400 50  0001 C CNN
+F 1 "GND" H 3755 4477 50  0000 C CNN
+F 2 "" H 3750 4650 50  0001 C CNN
+F 3 "" H 3750 4650 50  0001 C CNN
+	1    3750 4650
+	0    -1   -1   0   
+$EndComp
 Wire Bus Line
 	2400 7800 2400 7950
 Wire Bus Line
