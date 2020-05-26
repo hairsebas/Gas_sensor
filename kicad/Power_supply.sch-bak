@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr User 9449 7520
 encoding utf-8
-Sheet 2 5
+Sheet 5 5
 Title ""
 Date ""
 Rev ""
@@ -49,13 +49,6 @@ F 3 "" H 1150 2100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1050 1950 1050 2000
-Wire Wire Line
-	1050 2000 1150 2000
-Wire Wire Line
-	1150 2000 1150 1950
-Wire Wire Line
-	1150 2100 1150 2000
-Connection ~ 1150 2000
 $Comp
 L Device:C C47
 U 1 1 5F3279A9
@@ -253,7 +246,7 @@ Wire Wire Line
 Text GLabel 2750 3000 2    50   Input ~ 0
 +1.2V_FPGA
 $Comp
-L Regulator_Linear:ZLDO1117G25TA-proy U7
+L try1-rescue:ZLDO1117G25TA-proy-Regulator_Linear U7
 U 1 1 5F398C7E
 P 1550 4100
 F 0 "U7" H 1550 4467 50  0000 C CNN
@@ -264,7 +257,7 @@ F 3 "https://www.infineon.com/dgdl/auips1051.pdf?fileId=5546d462533600a4015355a4
 	1    0    0    -1  
 $EndComp
 $Comp
-L Regulator_Linear:ZLDO1117G12TA-proy U6
+L try1-rescue:ZLDO1117G12TA-proy-Regulator_Linear U6
 U 1 1 5F39A05E
 P 1550 3000
 F 0 "U6" H 1550 3367 50  0000 C CNN
@@ -275,7 +268,7 @@ F 3 "https://www.infineon.com/dgdl/auips1051.pdf?fileId=5546d462533600a4015355a4
 	1    0    0    -1  
 $EndComp
 $Comp
-L Regulator_Linear:ZLDO1117G33TA-proy U8
+L try1-rescue:ZLDO1117G33TA-proy-Regulator_Linear U8
 U 1 1 5F39BD0D
 P 1550 5200
 F 0 "U8" H 1550 5567 50  0000 C CNN
@@ -486,7 +479,7 @@ F 3 "" H 1550 5500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Regulator_Linear:ZLDO1117G33TA-proy U9
+L try1-rescue:ZLDO1117G33TA-proy-Regulator_Linear U9
 U 1 1 5F3E7978
 P 4300 3000
 F 0 "U9" H 4300 3367 50  0000 C CNN
@@ -597,7 +590,7 @@ F 3 "" H 4300 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Regulator_Linear:ZLDO1117G33TA-proy U10
+L try1-rescue:ZLDO1117G33TA-proy-Regulator_Linear U10
 U 1 1 5F3E9E75
 P 4300 4550
 F 0 "U10" H 4300 4917 50  0000 C CNN
@@ -832,13 +825,9 @@ Wire Notes Line
 Wire Notes Line
 	550  6250 3350 6250
 Wire Notes Line
-	8550 2450 8550 550 
-Wire Notes Line
 	550  550  8550 550 
-Wire Notes Line
-	550  2450 8550 2450
 $Comp
-L proyecto_libreria:BLM18SG121TN1D-proy FB2
+L try1-rescue:BLM18SG121TN1D-proy-proyecto_libreria FB2
 U 1 1 5EBB0508
 P 1950 1350
 F 0 "FB2" H 1950 1565 50  0000 C CNN
@@ -857,7 +846,7 @@ F 11 "http://uk.rs-online.com/web/p/products/7241447P" H 2600 550 50  0001 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L proyecto_libreria:BLM18SG121TN1D-proy FB3
+L try1-rescue:BLM18SG121TN1D-proy-proyecto_libreria FB3
 U 1 1 5EBB9E85
 P 4900 1500
 F 0 "FB3" V 4854 1578 50  0000 L CNN
@@ -876,7 +865,7 @@ F 11 "http://uk.rs-online.com/web/p/products/7241447P" H 5550 700 50  0001 L CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L proyecto_libreria:BLM18SG121TN1D-proy FB4
+L try1-rescue:BLM18SG121TN1D-proy-proyecto_libreria FB4
 U 1 1 5EBBC04B
 P 5800 1500
 F 0 "FB4" V 5754 1578 50  0000 L CNN
@@ -895,7 +884,7 @@ F 11 "http://uk.rs-online.com/web/p/products/7241447P" H 6450 700 50  0001 L CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L proyecto_libreria:BLM18SG121TN1D-proy FB5
+L try1-rescue:BLM18SG121TN1D-proy-proyecto_libreria FB5
 U 1 1 5EBBC5CD
 P 6700 1500
 F 0 "FB5" V 6654 1578 50  0000 L CNN
@@ -916,7 +905,7 @@ $EndComp
 Wire Wire Line
 	7650 1750 7650 2000
 $Comp
-L proyecto_libreria:BLM18SG121TN1D-proy FB6
+L try1-rescue:BLM18SG121TN1D-proy-proyecto_libreria FB6
 U 1 1 5EBBD7F3
 P 7650 1500
 F 0 "FB6" V 7604 1578 50  0000 L CNN
@@ -934,4 +923,52 @@ F 11 "http://uk.rs-online.com/web/p/products/7241447P" H 8300 700 50  0001 L CNN
 	1    7650 1500
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	1150 1950 1150 2100
+Text GLabel 1050 2000 0    50   Input ~ 0
+GND_case
+Text GLabel 6850 2500 0    50   Input ~ 0
+GND_case
+$Comp
+L try1-rescue:BLM18SG121TN1D-proy-proyecto_libreria FB?
+U 1 1 5ECCC61C
+P 7250 2500
+F 0 "FB?" H 7350 2650 50  0000 L CNN
+F 1 "BLM18SG121TN1D-proy" H 7295 2578 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7900 2600 50  0001 L CNN
+F 3 "https://www.murata.com/en-us/products/productdetail?partno=BLM18SG121TN1%23" H 7900 2500 50  0001 L CNN
+F 4 "Ferrite bead SMD 0603 120R 3A Murata Ferrite Bead (Chip Bead), 1.6 x 0.8 x 0.5mm (0603), 120 impedance at 100 MHz" H 7900 2400 50  0001 L CNN "Description"
+F 5 "0.75" H 7900 2300 50  0001 L CNN "Height"
+F 6 "Murata Electronics" H 7900 2200 50  0001 L CNN "Manufacturer_Name"
+F 7 "BLM18SG121TN1D" H 7900 2100 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "81-BLM18SG121TN1D" H 7900 2000 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=81-BLM18SG121TN1D" H 7900 1900 50  0001 L CNN "Mouser Price/Stock"
+F 10 "7241447P" H 7900 1800 50  0001 L CNN "RS Part Number"
+F 11 "http://uk.rs-online.com/web/p/products/7241447P" H 7900 1700 50  0001 L CNN "RS Price/Stock"
+	1    7250 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5ECCFD38
+P 7750 2550
+F 0 "#PWR?" H 7750 2300 50  0001 C CNN
+F 1 "GND" H 7755 2377 50  0000 C CNN
+F 2 "" H 7750 2550 50  0001 C CNN
+F 3 "" H 7750 2550 50  0001 C CNN
+	1    7750 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 2500 7750 2550
+Wire Wire Line
+	7500 2500 7750 2500
+Wire Wire Line
+	7000 2500 6850 2500
+Wire Notes Line
+	6100 2450 550  2450
+Wire Notes Line
+	6100 2850 8550 2850
+Wire Notes Line
+	8550 550  8550 2850
 $EndSCHEMATC

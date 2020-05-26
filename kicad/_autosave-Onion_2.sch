@@ -356,27 +356,18 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0136
 U 1 1 5EEBD7D9
-P 5350 2100
+P 5400 2100
 AR Path="/5E81C316/5EEBD7D9" Ref="#PWR0136"  Part="1" 
 AR Path="/5F32452B/5EEBD7D9" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0136" H 5350 1850 50  0001 C CNN
-F 1 "GND" H 5355 1927 50  0000 C CNN
-F 2 "" H 5350 2100 50  0001 C CNN
-F 3 "" H 5350 2100 50  0001 C CNN
-	1    5350 2100
+F 0 "#PWR0136" H 5400 1850 50  0001 C CNN
+F 1 "GND" H 5405 1927 50  0000 C CNN
+F 2 "" H 5400 2100 50  0001 C CNN
+F 3 "" H 5400 2100 50  0001 C CNN
+	1    5400 2100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	5300 2000 5300 2050
-Wire Wire Line
-	5300 2050 5350 2050
-Wire Wire Line
-	5350 2050 5350 2100
-Wire Wire Line
-	5400 2000 5400 2050
-Wire Wire Line
-	5400 2050 5350 2050
-Connection ~ 5350 2050
 $Comp
 L Power_Protection:SP0502BAHT D4
 U 1 1 5EEC16D0
@@ -732,8 +723,44 @@ Wire Notes Line
 	550  550  8300 550 
 Wire Notes Line
 	550  4550 8300 4550
+Wire Wire Line
+	5400 2000 5400 2100
+$Comp
+L try1-rescue:BLM18SG121TN1D-proy-proyecto_libreria FB?
+U 1 1 5ECF2138
+P 5300 2300
+AR Path="/5F3250E3/5ECF2138" Ref="FB?"  Part="1" 
+AR Path="/5E81C316/5ECF2138" Ref="FB10"  Part="1" 
+F 0 "FB10" H 5100 2550 50  0000 L CNN
+F 1 "BLM18SG121TN1D-proy" H 5100 2450 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5950 2400 50  0001 L CNN
+F 3 "https://www.murata.com/en-us/products/productdetail?partno=BLM18SG121TN1%23" H 5950 2300 50  0001 L CNN
+F 4 "Ferrite bead SMD 0603 120R 3A Murata Ferrite Bead (Chip Bead), 1.6 x 0.8 x 0.5mm (0603), 120 impedance at 100 MHz" H 5950 2200 50  0001 L CNN "Description"
+F 5 "0.75" H 5950 2100 50  0001 L CNN "Height"
+F 6 "Murata Electronics" H 5950 2000 50  0001 L CNN "Manufacturer_Name"
+F 7 "BLM18SG121TN1D" H 5950 1900 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "81-BLM18SG121TN1D" H 5950 1800 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=81-BLM18SG121TN1D" H 5950 1700 50  0001 L CNN "Mouser Price/Stock"
+F 10 "7241447P" H 5950 1600 50  0001 L CNN "RS Part Number"
+F 11 "http://uk.rs-online.com/web/p/products/7241447P" H 5950 1500 50  0001 L CNN "RS Price/Stock"
+	1    5300 2300
+	0    -1   -1   0   
+$EndComp
 Wire Bus Line
 	4450 5100 4450 5700
 Wire Bus Line
 	2150 5100 2150 5700
+$Comp
+L power:GND #PWR0169
+U 1 1 5ECFC1AF
+P 5300 2550
+AR Path="/5E81C316/5ECFC1AF" Ref="#PWR0169"  Part="1" 
+AR Path="/5F32452B/5ECFC1AF" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0169" H 5300 2300 50  0001 C CNN
+F 1 "GND" H 5305 2377 50  0000 C CNN
+F 2 "" H 5300 2550 50  0001 C CNN
+F 3 "" H 5300 2550 50  0001 C CNN
+	1    5300 2550
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC

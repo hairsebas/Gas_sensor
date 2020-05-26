@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 5
+Sheet 4 5
 Title ""
 Date ""
 Rev ""
@@ -350,25 +350,6 @@ Text Label 6650 7100 2    50   ~ 0
 JTAG_Micro_TRST
 Wire Wire Line
 	5550 7100 6650 7100
-$Comp
-L proyecto_libreria:BLM18SG121TN1D-proy FB7
-U 1 1 5EBA01FD
-P 3700 1100
-F 0 "FB7" H 3700 1315 50  0000 C CNN
-F 1 "BLM18SG121TN1D-proy" H 3700 1224 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4350 1200 50  0001 L CNN
-F 3 "https://www.murata.com/en-us/products/productdetail?partno=BLM18SG121TN1%23" H 4350 1100 50  0001 L CNN
-F 4 "Ferrite bead SMD 0603 120R 3A Murata Ferrite Bead (Chip Bead), 1.6 x 0.8 x 0.5mm (0603), 120 impedance at 100 MHz" H 4350 1000 50  0001 L CNN "Description"
-F 5 "0.75" H 4350 900 50  0001 L CNN "Height"
-F 6 "Murata Electronics" H 4350 800 50  0001 L CNN "Manufacturer_Name"
-F 7 "BLM18SG121TN1D" H 4350 700 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "81-BLM18SG121TN1D" H 4350 600 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=81-BLM18SG121TN1D" H 4350 500 50  0001 L CNN "Mouser Price/Stock"
-F 10 "7241447P" H 4350 400 50  0001 L CNN "RS Part Number"
-F 11 "http://uk.rs-online.com/web/p/products/7241447P" H 4350 300 50  0001 L CNN "RS Price/Stock"
-	1    3700 1100
-	1    0    0    -1  
-$EndComp
 NoConn ~ 1650 3000
 NoConn ~ 1650 3100
 NoConn ~ 1650 3200
@@ -403,38 +384,6 @@ NoConn ~ 5450 2500
 NoConn ~ 5450 2400
 NoConn ~ 5450 2300
 NoConn ~ 5450 2200
-Wire Wire Line
-	3700 6150 3600 6150
-Connection ~ 3600 6150
-Wire Wire Line
-	3500 1550 3600 1550
-Connection ~ 3500 1550
-Wire Wire Line
-	3500 6150 3600 6150
-Connection ~ 3500 6150
-Wire Wire Line
-	3300 1550 3400 1550
-Wire Wire Line
-	3400 1550 3500 1550
-Connection ~ 3400 1550
-Wire Wire Line
-	3300 6150 3400 6150
-Wire Wire Line
-	3400 6150 3500 6150
-Connection ~ 3400 6150
-Connection ~ 3300 1550
-Connection ~ 3300 6150
-$Comp
-L MCU_ST_STM32F1:STM32F100RBT6B-proy U4
-U 1 1 5EA2851A
-P 3500 4250
-F 0 "U4" H 2000 6800 50  0000 C CNN
-F 1 "STM32F100RBT6B-proy" H 2400 6700 50  0000 C CNN
-F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 1950 2950 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00251732.pdf" H 3300 4500 50  0001 C CNN
-	1    3500 4250
-	1    0    0    -1  
-$EndComp
 NoConn ~ 5050 1550
 Wire Wire Line
 	3950 1100 4100 1100
@@ -483,10 +432,90 @@ Wire Wire Line
 	5450 4350 6550 4350
 NoConn ~ 5450 3100
 NoConn ~ 5450 3200
+Wire Wire Line
+	3500 1550 3600 1550
+Connection ~ 3500 1550
+Wire Wire Line
+	3500 6150 3600 6150
+Connection ~ 3500 6150
+Wire Wire Line
+	3400 1550 3500 1550
+Wire Wire Line
+	3300 1550 3400 1550
+Connection ~ 3400 1550
+Wire Wire Line
+	3400 6150 3500 6150
+Wire Wire Line
+	3300 6150 3400 6150
+Connection ~ 3400 6150
+Connection ~ 3300 1550
+Connection ~ 3300 6150
+$Comp
+L try1-rescue:STM32F100RBT6B-proy-MCU_ST_STM32F1 U4
+U 1 1 5EA2851A
+P 3500 4250
+F 0 "U4" H 2000 6800 50  0000 C CNN
+F 1 "STM32F100RBT6B-proy" H 2400 6700 50  0000 C CNN
+F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 1950 2950 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00251732.pdf" H 3300 4500 50  0001 C CNN
+	1    3500 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L try1-rescue:BLM18SG121TN1D-proy-proyecto_libreria FB7
+U 1 1 5EBA01FD
+P 3700 1100
+F 0 "FB7" H 3700 1315 50  0000 C CNN
+F 1 "BLM18SG121TN1D-proy" H 3700 1224 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4350 1200 50  0001 L CNN
+F 3 "https://www.murata.com/en-us/products/productdetail?partno=BLM18SG121TN1%23" H 4350 1100 50  0001 L CNN
+F 4 "Ferrite bead SMD 0603 120R 3A Murata Ferrite Bead (Chip Bead), 1.6 x 0.8 x 0.5mm (0603), 120 impedance at 100 MHz" H 4350 1000 50  0001 L CNN "Description"
+F 5 "0.75" H 4350 900 50  0001 L CNN "Height"
+F 6 "Murata Electronics" H 4350 800 50  0001 L CNN "Manufacturer_Name"
+F 7 "BLM18SG121TN1D" H 4350 700 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "81-BLM18SG121TN1D" H 4350 600 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=81-BLM18SG121TN1D" H 4350 500 50  0001 L CNN "Mouser Price/Stock"
+F 10 "7241447P" H 4350 400 50  0001 L CNN "RS Part Number"
+F 11 "http://uk.rs-online.com/web/p/products/7241447P" H 4350 300 50  0001 L CNN "RS Price/Stock"
+	1    3700 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L try1-rescue:BLM18SG121TN1D-proy-proyecto_libreria FB8
+U 1 1 5ECD6661
+P 4050 6150
+F 0 "FB8" H 4050 6365 50  0000 C CNN
+F 1 "BLM18SG121TN1D-proy" H 4050 6274 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4700 6250 50  0001 L CNN
+F 3 "https://www.murata.com/en-us/products/productdetail?partno=BLM18SG121TN1%23" H 4700 6150 50  0001 L CNN
+F 4 "Ferrite bead SMD 0603 120R 3A Murata Ferrite Bead (Chip Bead), 1.6 x 0.8 x 0.5mm (0603), 120 impedance at 100 MHz" H 4700 6050 50  0001 L CNN "Description"
+F 5 "0.75" H 4700 5950 50  0001 L CNN "Height"
+F 6 "Murata Electronics" H 4700 5850 50  0001 L CNN "Manufacturer_Name"
+F 7 "BLM18SG121TN1D" H 4700 5750 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "81-BLM18SG121TN1D" H 4700 5650 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=81-BLM18SG121TN1D" H 4700 5550 50  0001 L CNN "Mouser Price/Stock"
+F 10 "7241447P" H 4700 5450 50  0001 L CNN "RS Part Number"
+F 11 "http://uk.rs-online.com/web/p/products/7241447P" H 4700 5350 50  0001 L CNN "RS Price/Stock"
+	1    4050 6150
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 5ECD825F
+P 4300 6150
+F 0 "#PWR0111" H 4300 5900 50  0001 C CNN
+F 1 "GND" H 4305 5977 50  0000 C CNN
+F 2 "" H 4300 6150 50  0001 C CNN
+F 3 "" H 4300 6150 50  0001 C CNN
+	1    4300 6150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3800 6150 3700 6150
 Wire Bus Line
 	3350 6500 3350 6700
 Wire Bus Line
-	1450 6500 1450 6900
-Wire Bus Line
 	5450 6500 5450 7000
+Wire Bus Line
+	1450 6500 1450 6900
 $EndSCHEMATC
